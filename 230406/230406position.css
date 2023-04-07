@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Oswald&display=swap');
 
-/* common,reset */
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,12 +29,6 @@ header {
     top: 0; right: 0; left: 0;
     margin: auto;
 }
-/* div .box {
-    max-width:1200px; height: 140px;
-    position: fixed;
-    top: 0; right: 0; left: 0;
-    margin: auto;       
-} */
 
 h2 {
     background-color: coral;
@@ -70,7 +64,7 @@ header .utill a {
 header .utill a:hover {
     background-color: aqua;
 } 
-/* 메뉴 */
+
 header menu {
     position: absolute;
     bottom: 10px; right: 10%;
@@ -89,7 +83,7 @@ header .gnb a {
 header .gnb a:hover {
     background-color: brown;
 }
-/* 메인 */
+
 main {
     margin: 0;
 }
