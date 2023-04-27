@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transEx4</title>
+    <style>
+        /* 
+         input:focus { 텍스트 필드에 포커스가 잡히면 }
+         input:checked { 체크박스에 체그가 되면 }
+         input:disabled { 비활성 }
+
+         input[type=checkbox]:checked{}
+        */
+        .box1 {
+               background-color: teal;
+               width: 20vw; height: 30vh;
+                 overflow: hidden;
+        }
+        .box2 {
+            background-color: tomato;
+            width: 30vw; height: 20vh;
+            
+        }
+        input[type=checkbox]:checked ~ .box1 {
+            height: 0; overflow: hidden; 
+        transition: 1s;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <!-- lable 사용 -->
+    <h1>trans 연습 4</h1>
+    <input type="checkbox" name="check" id="check">
+    <label for="check">체크 박스가 체크되면 박스가 위로 올라와 사라집니다.</label>
+    <div class="box1">
+        <h2>:checked</h2>
+        <p>  인간에 천고에 커다란 고동을 있는 반짝이는 주며, 꽃
+             있으랴? 이것을 크고 때에, 봄바람이다. 불러 물방아 위하여서, 
+             풀밭에 들어 눈이 소담스러운 작고 것은 끓는다. 힘차게 그러므로 
+             있는 청춘의 운다. 끝에 원질이 인생을 사막이다. 예수는 피어나기 
+             있음으로써 안고, 과실이 더운지라 사라지지 이것이다. 따뜻한 우리 
+             부패를 더운지라 품고 별과 반짝이는 있다. 피어나기 않는 희망의 수 
+             부패뿐이다. 인간은 꽃이 사라지지 뛰노는 원대하고, 끓는 이상은 되는 
+             이상 보라.</p>
+    </div>
+    <div class="box2">block</div>
+    
+
+</body>
+</html>
