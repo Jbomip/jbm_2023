@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>flexWeb1</title>
+    <style>
+        body {
+            width: 100vw;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        } 
+    
+        .bor strong { font-style: italic;}
+
+        header {   
+            background-color:  rgb(188, 232, 241);
+            width: 100%; height: 500px;
+            display: flex;
+            justify-content: center;  
+        }
+        header article {
+            width: 650px; height: 50%;
+            margin-top: 50px;
+        }
+        header article h1 {
+            padding: 0; margin: 30px 0 40px  0;
+            font-weight: normal;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 5rem;
+        }
+        header article h3 {
+            font-weight: normal;
+            border: 1px solid #000;
+            border-radius: 40px;
+            padding: 10px 30px;
+            width: 100px;
+            line-height: 1.6;
+            margin-top: 50px;
+            background: url(./images0502/pngegg.png) no-repeat 95% / 20%;
+            font-size: 0.9rem;
+        }
+
+
+
+
+        main{ 
+            width: 100%;
+            background-color: rgb(153, 109, 168);
+            
+        }
+        main article {
+            width: 300px;
+        }
+        main .box1 { 
+            width: 100%; height: 400px;
+            display: flex;
+            justify-content: space-between;
+            /* background: url(./images0502/mountain.jpg) no-repeat 100% / contain; */
+        }
+        main .box1 article {
+            margin: 40px auto;
+        } 
+        main .box1 h3 {
+            font-weight: normal;
+            border: 1px solid #000;
+            border-radius: 40px;
+            padding: 10px 30px;
+            width: 100px;
+            line-height: 1.6;
+            margin-top: 50px;
+            background: url(./images0502/pngegg.png) no-repeat 95% / 20%;
+            font-size: 0.9rem;
+        }
+
+        main .box2 {
+            background-color: rgb(120, 209, 230);
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+            /* align-items: center; */
+            width: 100%; height: 500px;
+        }
+        main .box2 article {
+            margin: 0 20px ;
+            height: 300px;
+        }
+        main .box2 h3 {
+            font-weight: normal;
+            font-size: 2rem;
+        }
+        main .box2 h2 {
+            font-weight: normal;
+            border: 1px solid #000;
+            border-radius: 40px;
+            padding: 10px 30px;
+            width: 100px;
+            line-height: 1.6;
+            margin-top: 50px;
+            background: url(./images0502/pngegg.png) no-repeat 95% / 20%;
+            font-size: 0.9rem;
+        }
+
+        main .box3 {
+            display: flex;
+        }
+        main .box3 article {
+            width: 250px;
+            margin: 50px auto;
+        }
+        main .box3 h3 {
+            font-weight: normal;
+            border: 1px solid #000;
+            border-radius: 40px;
+            padding: 10px 30px;
+            width: 100px;
+            line-height: 1.6;
+            margin-top: 40px;
+            background: url(./images0502/pngegg.png) no-repeat 95% / 20%;
+            font-size: 0.9rem;
+        }
+        
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(188, 232, 241);
+            width: 100%; height: 500px;
+        }
+        footer article {
+            width: 500px;
+        }
+        footer .email {
+            display: flex;
+        }
+        footer article .icon {
+            width: 100%;
+            display: flex;
+            
+        }
+        footer article span { 
+            border: solid #000 1px;
+            border-radius: 50%;
+            padding: 15px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+        footer article span:nth-of-type(1) {
+            background: url(./images0502/twitter.png) no-repeat 50% / 50%;
+        }
+        footer article span:nth-of-type(2) {
+            background: url(./images0502/facebook-logo.png) no-repeat 50% / 50%;
+        }
+        footer article span:nth-of-type(3) {
+            background: url(./images0502/instagram.png) no-repeat 50% / 50%;
+        }
+        footer article span:nth-of-type(4) {
+            background: url(./images0502/email.png) no-repeat 50% / 50%;
+        }
+        footer .email p:nth-of-type(1) {
+            width: 65%;
+            border: 1px #000 solid;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        footer .email p:nth-of-type(2) {
+            font-weight: normal;
+            border: 1px solid #000;
+            border-radius: 40px;
+            padding: 10px 30px;
+            width: 100px;
+            line-height: 1.6;
+            background: url(./images0502/pngegg.png) no-repeat 95% / 20%;
+            font-size: 0.9rem;
+            margin-left: 20px;
+        }
+        footer .email {
+            margin: 30px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <article>
+          <p class="bor"><strong>Lorem ipsum</strong>dolorsum dolor </p>
+          <h1>Sed amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur explicabo voluptatibus natus sapiente assumenda blanditiis accusantium, voluptate odit sint, facere nihil odio eos vitae deserunt sed, veritatis qui rem! Quo?</p>
+          <h3>sagittis</h3>
+        </article>
+    </header>
+    <main>
+    <div class="box1">
+        <article> 
+          <p class="bor"><strong>Lorem ipsum</strong>dolorsum dolor </p>
+          <h1>morbi tincidunt</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi maiores officiis sit dolorum nemo numquam explicabo tempore rerum doloremque facere neque delectus animi sunt perspiciatis laudantium, ipsum saepe vitae quas?</p>
+          <h3>sagittis</h3>
+        </article>
+          <img src="./images0502/mountain.jpg" alt="mountain">
+    </div>
+    <div class="box2">
+        <article>
+            <p><strong>Lorem ipsum</strong>dolorsum dolor </p>
+            <h3>ulaamsdfmk</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus ipsam culpa sunt distinctio, harum accusantium, labore maiores autem at dolore nostrum soluta dolorum dolorem nulla quisquam aspernatur et. Sunt.</p>
+            <h2>sagittis</h2>
+        </article>
+
+        <article>
+            <p><strong>Lorem ipsum</strong>dolorsum dolor </p>
+            <h3>kldsjfl</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus perspiciatis nulla molestiae! Totam eum fugiat temporibus, possimus placeat a quos beatae voluptatibus, mollitia veritatis voluptate perferendis, voluptatem ab.</p>
+            <h2>sagittis</h2> 
+        </article>
+    </div>
+    <div class="box3">
+        <img src="./images0502/beach.avif" alt="beach">
+        <article>
+         <p class="bor"><strong>Lorem ipsum</strong>dolorsum dolor </p>
+         <h1>morbi tincidunt</h1>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi maiores officiis sit dolorum nemo numquam explicabo tempore rerum doloremque facere neque delectus animi sunt perspiciatis laudantium, ipsum saepe vitae quas?</p>
+         <h3>sagittis</h3>
+        </article> 
+    </div>
+    </main>
+    <footer>
+        <article>
+          <p class="bor"><strong>Lorem ipsum</strong>dolorsum dolor </p>
+          <h1>sladfasdf</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem reprehenderit neque officiis nesciunt eum sapiente similique explicabo necessitatibus veniam omnis rerum pariatur fugit soluta aspernatur, consequuntur temporibus natus cum! Quidem?</p>
+          <div class="email">
+            <p>email</p> <p>subscribe</p>
+          </div>
+          <div class="icon">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+           </div>
+        </article>
+    </footer>
+
+</body>
+</html>
